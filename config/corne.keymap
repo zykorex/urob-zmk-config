@@ -1,0 +1,21 @@
+/* source key position labels */
+#include "zmk-helpers/key-labels/42.h"
+
+/* map Corne's extra keys */
+#define X_RH  &smart_mouse  // thumb row, right
+
+#define X_LT  &gresc
+#define X_LM  &caps_word
+#define X_LB  &sk LSHIFT
+#define X_LH  &kp LGUI
+
+#define X_RT  &kp TAB
+#define X_RM  &key_repeat
+#define X_RB  &kp BSPC
+
+
+/* activate bluetooth */
+#define CONFIG_WIRELESS 1
+ee
+/* source the main keymap */
+#include "base.keymap"
